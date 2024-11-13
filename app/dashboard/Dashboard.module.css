@@ -1,0 +1,41 @@
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #0077ff, #00c3ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.text {
+    font-size: 1rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .text {
+        font-size: 0.8rem;
+    }
+}
