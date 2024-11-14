@@ -1,32 +1,34 @@
 .container {
-    padding: 20px;
+    padding: 30px;
     max-width: 1200px;
     margin: auto;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f3f3f3;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #333;
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 2.8rem;
     font-weight: bold;
     color: #007700;
+    margin-bottom: 1rem;
 }
 
 .memberList {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
 }
 
 .memberCard {
-    background-color: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease;
 }
 
 .memberCard:hover {
@@ -34,22 +36,24 @@
 }
 
 .memberPhoto {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .memberName {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #333;
+    margin-top: 10px;
 }
 
 .memberRole,
 .memberRM {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #666;
     margin: 5px 0;
 }
@@ -59,8 +63,11 @@
     color: #0077ff;
     text-decoration: none;
     margin-top: 5px;
+    font-weight: bold;
+    transition: color 0.2s ease;
 }
 
 .link:hover {
+    color: #0055aa;
     text-decoration: underline;
 }
