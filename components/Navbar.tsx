@@ -1,13 +1,14 @@
 import Link from 'next/link';
+import styles from './Navbar.module.css';
 
 const Navbar = () => {
     return (
-        <nav style={{ padding: '10px', backgroundColor: '#0077ff', color: 'white' }}>
-            <ul style={{ display: 'flex', listStyle: 'none', gap: '15px' }}>
-                <li><Link href="/dashboard">Dashboard</Link></li>
-                <li><Link href="/analytics">Analytics</Link></li>
-                <li><Link href="/settings">Settings</Link></li>
-                <li><Link href="/members">Members</Link></li>
+        <nav className={styles.navbar}>
+            <ul className={styles.navList}>
+                <li><Link href="/dashboard" className={styles.navLink}>Página Inicial</Link></li>
+                <li><Link href="/analytics" className={styles.navLink}>Análises</Link></li>
+                <li><Link href="/settings" className={styles.navLink}>Configurações</Link></li>
+                <li><Link href="/members" className={styles.navLink}>Membros</Link></li>
             </ul>
         </nav>
     );

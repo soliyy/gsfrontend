@@ -1,0 +1,30 @@
+/* Navbar.module.css */
+
+.navbar {
+    background-color: #0077ff;
+    padding: 25px 15px;
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #0055aa;
+    font-family: 'Montserrat', sans-serif; /* Fonte Montserrat aplicada */
+}
+
+.navList {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0 30px ;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navLink:hover {
+    color: #cce7ff;
+}
