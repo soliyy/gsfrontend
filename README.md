@@ -1,42 +1,3 @@
-# Plataforma de Eficiência Energética para Indústrias
-
-## Descrição do Projeto
-Uma plataforma digital que utiliza inteligência artificial para analisar dados de consumo de energia em indústrias. O sistema identifica oportunidades de otimização 
-
-## Funcionalidades
-- **Dashboard**: Visualização geral do consumo de energia e insights relevantes.
-- **Analytics**: Análise detalhada de consumo por período e categorias.
-- **Configurações (Settings)**:
-  - Ativar ou desativar notificações.
-  - Escolher intervalo de dados (7, 30 ou 90 dias).
-  - Selecionar data e hora (padrão no horário de Brasília - UTC-3).
-  - Persistência de configurações no frontend com localStorage.
-- **Membros da Equipe (Members)**:
-  - Exibição de membros com links para GitHub e LinkedIn.
-
-## Estrutura de Pastas
-```
-.
-├── app/
-│   ├── analytics/
-│   │   ├── page.tsx
-│   ├── dashboard/
-│   │   ├── page.tsx
-│   ├── members/
-│   │   ├── page.tsx
-│   ├── settings/
-│   │   ├── page.tsx
-│   │   ├── Settings.module.css
-│   ├── layout.tsx
-│   ├── globals.css
-├── components/
-│   ├── Navbar.tsx
-│   ├── Navbar.module.css
-├── public/
-│   ├── imagens/
-│       ├── [imagens dos membros e elementos estáticos]
-├── README.md
-```
 
 ## Tecnologias Utilizadas
 **Frontend**:
@@ -46,39 +7,40 @@ Uma plataforma digital que utiliza inteligência artificial para analisar dados 
 - CSS Modules
 
 **Persistência Local**:
-- localStorage para salvar configurações.
+- `localStorage` para salvar configurações de usuário (intervalo de dados, notificações, etc.)
 
 **Design**:
 - Fontes do Google Fonts (Montserrat).
-- Estilos responsivos.
+- Estilos responsivos com **CSS Modules**.
 
 ## Como Rodar o Projeto
-1. Clone o repositório:
+
+### 1. Clone o repositório:
     ```bash
-    git clone [URL_DO_REPOSITORIO]
-    cd [NOME_DA_PASTA]
+    git clone https://github.com/soliyy/gsfrontend.git
+    cd gsfrontend
     ```
 
-2. Instale as dependências:
+### 2. Instale as dependências:
     ```bash
     npm install
     ```
 
-3. Execute o servidor de desenvolvimento:
+### 3. Execute o servidor de desenvolvimento:
     ```bash
     npm run dev
     ```
 
-4. Acesse no navegador:
+### 4. Acesse o projeto no navegador:
     ```
     http://localhost:3000
     ```
 
 ## Equipe
-- **[Lucas Martins Soliman RM:558506]**
-- **[Lucas Henrique de Souza Santos RM558241]**
-- **[Ryan Fernando Lucio da Silva RM555924]**
-
+- **Lucas Martins Soliman** RM: 558506
+- **Lucas Henrique de Souza Santos** RM: 558241
+- **Ryan Fernando Lucio da Silva** RM: 555924
 
 ## Deploy
-O projeto foi implementado no Vercel. Acesse a versão final em: https://seuprojeto.vercel.app
+O projeto foi implementado no **Vercel**. Acesse a versão final em: 
+[https://seuprojeto.vercel.app](https://seuprojeto.vercel.app) *(Substitua pelo link real do seu projeto no Vercel)*
