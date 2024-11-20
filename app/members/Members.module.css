@@ -1,0 +1,93 @@
+.container {
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #0077ff; /* Azul estático */
+    border-radius: 15px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3); /* Consistente com as outras páginas */
+    color: #ffffff; /* Texto branco para contraste */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo dentro do contêiner */
+    min-height: 100vh;
+}
+
+.title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #ffffff; /* Título branco para contraste */
+    margin-bottom: 1rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+}
+
+.memberList {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centraliza as caixas de membros horizontalmente */
+    gap: 50px;
+    flex-wrap: wrap;
+    width: 100%; /* Garante que ocupe toda a largura disponível */
+    max-width: 800px; /* Define uma largura máxima para centralizar */
+}
+
+.memberCard {
+    background: white; /* Fundo branco para destaque */
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra consistente */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.memberCard:hover {
+    transform: scale(1.05);
+}
+
+.memberPhoto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.memberName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.memberRole,
+.memberRM {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.link {
+    display: block;
+    color: #0077ff; /* Azul consistente */
+    text-decoration: none;
+    margin-top: 5px;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.link:hover {
+    color: #0055aa;
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+    background-color: #0077ff; /* Azul consistente */
+    font-size: 0.9rem;
+    color: #ffffff; /* Texto branco no rodapé */
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
