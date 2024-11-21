@@ -1,20 +1,19 @@
 import Navbar from '../components/Navbar';
+import styles from './Layout.module.css';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
     return (
         <html lang="pt-BR">
             <head>
                 <title>Plataforma de Eficiência Energética</title>
+                <link rel="icon" href="/images/inovaeco-icon.jfif" />
             </head>
-            <body style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', margin: 0 }}>
+            <body className={styles.container}>
                 <Navbar />
-                <main style={{ flex: 1, padding: '20px' }}>{children}</main>
-                <footer style={{
-                    textAlign: 'center',
-                    padding: '20px',
-                    backgroundColor: '#f0f0f0',
-                    borderTop: '1px solid #ddd'
-                }}>
+                <main className={styles.mainContent}>
+                    {children}
+                </main>
+                <footer className={styles.footer}>
                     <p>&copy; 2024 Plataforma de Eficiência Energética. Todos os direitos reservados.</p>
                 </footer>
             </body>

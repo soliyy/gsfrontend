@@ -12,9 +12,8 @@ type EnergyData = {
 
 const Dashboard = () => {
     const [data, setData] = useState<EnergyData | null>(null);
-    const [dataRange, setDataRange] = useState('30d'); // Valor inicial para o intervalo
+    const [dataRange, setDataRange] = useState('30d'); 
 
-    // Função para buscar dados da API
     const fetchData = async (range: string) => {
         try {
             const response = await axios.get(`/api/energy-consumption?range=${range}`);
@@ -25,26 +24,22 @@ const Dashboard = () => {
     };
 
     useEffect(() => {
-        // Ao montar, recupera o intervalo de dados do localStorage
         const savedDataRange = localStorage.getItem('dataRange') || '30d';
         setDataRange(savedDataRange);
-        fetchData(savedDataRange); // Buscar dados com o intervalo salvo
+        fetchData(savedDataRange); 
     }, []);
 
-    // Verificar mudanças no intervalo de dados periodicamente (ou usar outra abordagem de detecção)
     useEffect(() => {
         const handleStorageChange = () => {
             const updatedRange = localStorage.getItem('dataRange') || '30d';
             if (updatedRange !== dataRange) {
                 setDataRange(updatedRange);
-                fetchData(updatedRange); // Atualizar os dados com o novo intervalo
+                fetchData(updatedRange); 
             }
         };
 
-        // Ouvir mudanças no localStorage
         window.addEventListener('storage', handleStorageChange);
 
-        // Limpeza do evento ao desmontar o componente
         return () => window.removeEventListener('storage', handleStorageChange);
     }, [dataRange]);
 

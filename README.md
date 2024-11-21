@@ -1,3 +1,6 @@
+**importante** 
+- perdemos alguns commits por conta de um erro de git
+
 
 ## Tecnologias Utilizadas
 **Frontend**:

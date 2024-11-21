@@ -15,7 +15,6 @@ import {
     Legend,
 } from 'chart.js';
 
-// Registrar os componentes do Chart.js
 ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -52,11 +51,11 @@ const Analytics = () => {
     }, []);
 
     const chartData = {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'], // Ajuste para dados reais, se necessário
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'], // Ajuste para dados reais, se necessario
         datasets: [
             {
                 label: 'Consumo de Energia (kWh)',
-                data: energyData ? [120, 200, 150, 300, 250] : [], // Simulação para fins de teste
+                data: energyData ? [120, 200, 150, 300, 250] : [], // Simulaçao para fins de teste
                 borderColor: 'rgba(75, 192, 192, 1)',
                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
                 fill: true,
