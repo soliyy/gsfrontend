@@ -45,5 +45,4 @@
 - **Ryan Fernando Lucio da Silva** RM: 555924
 
 ## Deploy
-O projeto foi implementado no **Vercel**. Acesse a versão final em: 
-[https://seuprojeto.vercel.app](https://seuprojeto.vercel.app) *(Substitua pelo link real do seu projeto no Vercel)*
+O projeto foi implementado no **Vercel**. Acesse a versão final em: (https:/gsfrontend-mglvl0pbi-lucasmsoliman-gmailcoms-projects.vercel.app/)
