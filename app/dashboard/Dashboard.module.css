@@ -1,10 +1,8 @@
-/* Dashboard.module.css */
-
 .container {
     padding: 30px;
     max-width: 1200px;
     margin: auto;
-    background-color: #0077ff; /* Fundo azul estático para combinar com o nav */
+    background-color: #0077ff;
     border-radius: 15px;
     box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -26,7 +24,7 @@
 
 .innerContent {
     margin-top: 30px;
-    background-color: #ffffff; /* Fundo branco para o conteúdo */
+    background-color: #ffffff; 
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -42,7 +40,7 @@
 .dataBox {
     margin-top: 20px;
     padding: 20px;
-    background-color: #eef6ff; /* Fundo azul claro mais suave */
+    background-color: #eef6ff; 
     border: 1px solid #0077ff;
     border-radius: 15px;
     text-align: center;
@@ -76,7 +74,6 @@
     color: #0055aa;
 }
 
-/* Nova classe para texto azul */
 .blueText {
     color: #0077ff;
 }

@@ -2,41 +2,41 @@
     padding: 30px;
     max-width: 1200px;
     margin: auto;
-    background-color: #0077ff; /* Azul estático */
+    background-color: #0077ff; 
     border-radius: 15px;
-    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3); /* Consistente com as outras páginas */
-    color: #ffffff; /* Texto branco para contraste */
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3); 
+    color: #ffffff; 
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo dentro do contêiner */
+    align-items: center; 
     min-height: 100vh;
 }
 
 .title {
     font-size: 2.8rem;
     font-weight: bold;
-    color: #ffffff; /* Título branco para contraste */
+    color: #ffffff;
     margin-bottom: 1rem;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .memberList {
     margin-top: 20px;
     display: flex;
-    justify-content: center; /* Centraliza as caixas de membros horizontalmente */
+    justify-content: center; 
     gap: 50px;
     flex-wrap: wrap;
-    width: 100%; /* Garante que ocupe toda a largura disponível */
-    max-width: 800px; /* Define uma largura máxima para centralizar */
+    width: 100%;
+    max-width: 800px;
 }
 
 .memberCard {
-    background: white; /* Fundo branco para destaque */
+    background: white;
     padding: 20px;
     width: 200px;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra consistente */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -70,7 +70,7 @@
 
 .link {
     display: block;
-    color: #0077ff; /* Azul consistente */
+    color: #0077ff; 
     text-decoration: none;
     margin-top: 5px;
     font-weight: bold;
@@ -86,8 +86,8 @@
     text-align: center;
     margin-top: auto;
     padding: 10px;
-    background-color: #0077ff; /* Azul consistente */
+    background-color: #0077ff;
     font-size: 0.9rem;
-    color: #ffffff; /* Texto branco no rodapé */
+    color: #ffffff; 
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
